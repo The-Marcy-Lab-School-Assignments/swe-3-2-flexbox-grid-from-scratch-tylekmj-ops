@@ -1,23 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <img src="img/logo.png" alt="" />
-      <h1>Marcy Music</h1>
-      <nav>
-        <a href="#">Library</a>
-        <a href="#">Explore</a>
-        <a href="#">Profile</a>
-      </nav>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" alt="" />
+    <h1>Marcy Music</h1>
+    <nav>
+      <a href="#">Library</a>
+      <a href="#">Explore</a>
+      <a href="#">Profile</a>
+    </nav>
+  </header>
+
+  <main>
     <section id="Playlist">
-      <h1>Playlist</h1>
+      <h1>Playlists</h1>
       <div class="grid-container">
         <div class="grid-item">
           <img src="img/playlist-chill.jpg" alt="" />
@@ -25,7 +29,7 @@
         </div>
         <div class="grid-item">
           <img src="img/playlist-focus.jpg" alt="" id="inequal" />
-          <p>Focus</p>
+          <p>Focuss</p>
         </div>
         <div class="grid-item">
           <img src="img/playlist-late-night.jpg" alt="" />
@@ -36,18 +40,46 @@
           <p>Love Songs</p>
         </div>
         <div class="grid-item">
-          <img src="img/playlist-oldies.jpg" alt="" />
+          <img src="img/playlist-oldies.jpg" alt="" id="inequal" />
           <p>Oldies</p>
         </div>
         <div class="grid-item">
-          <img src="img/playlist-sad.jpg" alt="" id="inequal" />
+          <img src="img/playlist-sad.jpg" alt="" />
           <p>Sad</p>
         </div>
       </div>
     </section>
 
     <section id="album">
-      <h1>Album</h1>
+      <h1>Albums</h1>
+      <div class="album-container">
+        <div class="album-item">
+          <img src="img/album-midnight-dreams.jpg" alt="" />
+          <p class="album-title">Midnight Dreams</p>
+          <p class="album-artist">Luna Ray</p>
+        </div>
+        <div class="album-item">
+          <img src="img/album-electric-soul.jpg" alt="" />
+          <p class="album-title">Electric Soul</p>
+          <p class="album-artist">The Voltage</p>
+        </div>
+        <div class="album-item">
+          <img src="img/album-golden-hour.jpg" alt="" />
+          <p class="album-title">Golden Hour</p>
+          <p class="album-artist">Sunset Collective</p>
+        </div>
+        <div class="album-item">
+          <img src="img/album-kermit-does-jazz.jpg" alt="" />
+          <p class="album-title" id="kermit">Kermit Does Jazz</p>
+          <p class="album-artist">Kermit the Frog</p>
+        </div>
+      </div>
     </section>
-  </body>
+  </main>
+
+  <footer>
+    <p>Made with &hearts; at <span class="highlight">Marcy Lab School</span></p>
+  </footer>
+</body>
+
 </html>
