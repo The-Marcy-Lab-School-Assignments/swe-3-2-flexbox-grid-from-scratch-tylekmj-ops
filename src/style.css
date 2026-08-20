@@ -18,14 +18,22 @@ img {
 
 /* Add your styles below */
 
+:root {
+  --color-bg: #000000;
+  --color-card-bg: #1e1e1e;
+  --color-text: #ffffff;
+  --color-accent: #1db954;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  background-color: #1e1e1e;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  text-align: center;
 }
 
 h1 {
-  color: #1db954;
+  color: var(--color-accent);
 }
 
 main {
@@ -35,7 +43,7 @@ main {
 }
 
 .grid-item {
-  background: black;
+  background: var(--color-card-bg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -65,12 +73,24 @@ main {
   justify-content: center;
 }
 
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 #inequal {
   font-weight: bold;
 }
 
 header {
-  background-color: black;
+  background-color: var(--color-bg);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -94,12 +114,12 @@ nav {
 nav>a {
   font-size: 1rem;
   text-decoration: none;
-  color: white;
+  color: var(--color-text);
   font-weight: bold;
 }
 
 nav>a:hover {
-  color: #1db954;
+  color: var(--color-accent);
 }
 
 #Playlist h1 {
@@ -121,7 +141,7 @@ nav>a:hover {
 }
 
 .album-item {
-  background: black;
+  background: var(--color-card-bg);
   width: 180px;
   padding: 15px;
   border-radius: 8px;
@@ -153,5 +173,5 @@ footer {
 }
 
 .highlight {
-  color: #1db954;
+  color: var(--color-accent);
 }
